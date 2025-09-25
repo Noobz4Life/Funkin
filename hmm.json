@@ -129,6 +129,13 @@
       "url": "https://github.com/FunkinCrew/hxdiscord_rpc"
     },
     {
+      "name": "hxgamemode",
+      "type": "git",
+      "dir": null,
+      "ref": "faf17c6522bf85f7be4ce38376a8c41812a3c9bf",
+      "url": "https://github.com/MAJigsaw77/hxgamemode"
+    },
+    {
       "name": "hxjsonast",
       "type": "git",
       "dir": null,

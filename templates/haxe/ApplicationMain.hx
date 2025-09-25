@@ -7,6 +7,8 @@ import haxe.macro.Expr;
 #end
 
 #if (linux && !macro)
+import hxgamemode.GamemodeClient;
+
 @:image('art/icons/iconOG.png')
 class ApplicationIcon extends lime.graphics.Image {}
 #end
@@ -347,6 +349,8 @@ class ApplicationMain
     loader.addPath(haxe.io.Path.directory(#if (haxe_ver >= 3.3) sys_program_path #else Sys.executablePath() #end));
     loader.addPath("./");
     loader.addPath("@executable_path/");
+    #elseif linux
+      GamemodeClient.request_start();
     #end
   }
   #end
